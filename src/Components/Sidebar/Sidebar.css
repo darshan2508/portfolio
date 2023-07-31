@@ -1,0 +1,45 @@
+.sidebar-section {
+  display: flex;
+  background-color: #030303da;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #030303da;
+  width: 70px;
+  position: fixed;
+}
+
+.sidebar-expand {
+  height: 100vh;
+  background-color: #030303da;
+  width: 170px;
+}
+
+.icon-for-sidebar-expand-and-collapse {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.icon-for-sidebar-expand-and-collapse p svg {
+  /*here we required p and svg because div where this class is used there p tag is used along with this icon and icon is of svg type */
+  background-color: #19092c;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+}
